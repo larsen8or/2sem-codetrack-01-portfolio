@@ -22,24 +22,22 @@
             <div class="header-content">
                 <nav class="main-nav">
                     <ul>
+                        <a href="/">
+                            <img src="/images/old-guy-logo.png" alt="Logo" width="80" height="80" style="max-width:100%;height:auto;">
+                        </a>
                         <li>
                             <a href="/">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/about">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/projects">
-                                Projects
+                                Work
                             </a>
                         </li>
                         <li>
                             <a href="/contact">
                                 Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/about">
+                                About
                             </a>
                         </li>
                     </ul>
@@ -102,7 +100,7 @@
         <div class="footer-content">
             <p class="copyright">
                 &copy; <?= date('Y') ?>
-                My Portfolio. All rights reserved.
+                O{l}dd gAI design
             </p>
             <p class="footer-links">
                 <a href="/login" class="admin-link">Login</a>

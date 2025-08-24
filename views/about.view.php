@@ -37,15 +37,12 @@ $this->extend('layout');
                     and maintain.
                 </p>
                 <p>
-                    When I'm not coding, I enjoy keeping up with the latest tech trends,
-                    contributing to open-source projects, and sharing knowledge with the
-                    developer community. I'm particularly excited about modern PHP practices,
-                    test-driven development, and building scalable applications.
+                    Martin is a bloody wanker!
                 </p>
             </div>
 
             <div class="about-image">
-                <img src="images/profile-portrait.jpg" alt="Headshot of Abigail looking suspicious" class="portrait-image">
+                <img src="images/copilotBillede.png" alt="Headshot of Abigail looking suspicious" class="portrait-image">
             </div>
         </div>
     </div>

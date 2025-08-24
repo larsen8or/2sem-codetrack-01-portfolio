@@ -56,7 +56,7 @@ section {
 header.navigation-bar {
     background-color: var(--color-nav-bg);
     color: var(--color-nav-text);
-    padding: var(--space-sm) 0;
+    padding: var(--space-xs) 0;
 }
 
 .header-content {
@@ -65,6 +65,7 @@ header.navigation-bar {
     justify-content: space-between;
     align-items: center;
     gap: var(--space-sm);
+    font-size: 2.2rem;
 
     @media (min-width: 768px) {
         flex-direction: row;
@@ -82,13 +83,14 @@ header.navigation-bar {
 
 .main-nav ul li,
 .user-nav ul li {
-    margin: 0 var(--space-sm);
+    margin: 0 var(--space-lg);
 }
 
 .main-nav ul li a,
 .user-nav ul li a {
     color: var(--color-nav-text);
     text-decoration: none;
+    display: inline-block;
     transition: var(--transition);
 }
 .user-nav ul li a {
@@ -98,6 +100,7 @@ header.navigation-bar {
 .main-nav ul li a:hover,
 .user-nav ul li a:hover {
     color: var(--color-primary);
+    transform: scale(1.5);
 }
 
 .logout-form {

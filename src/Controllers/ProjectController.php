@@ -26,11 +26,17 @@ class ProjectController extends Controller
     public function index(Request $request): Response
     {
         $response = new Response();
-        $response->setTemplate($this->template, 'projects', [
-            ...$this->pullFlash($response),
-            'request' => $request,
-            'projects' => $this->getProjects(),
-        ]);
+        $response->setTemplate(
+            $this->template,
+            'projects',
+            [
+                ...$this->pullFlash(
+                    $response
+                ),
+                'request' => $request,
+                'projects' => $this->getProjects(),
+            ],
+        );
         return $response;
     }
 
@@ -43,12 +49,16 @@ class ProjectController extends Controller
     {
         return [
             new ProjectDto(
-                title: 'Portfolio Website',
-                description: 'A modern portfolio website built from scratch with PHP. Features a clean, responsive design with a mobile-first approach, optimized performance, and maintainable object-oriented code following the MVC pattern. Includes custom form handling with rate limiting and a modular template system.',
-                technologies: 'PHP, HTML5, CSS3, Responsive Design',
-                image: 'images/projects/portfolio.jpg',
+                title: 'Turning Design Into Digital Awareness',
+                description: 'How do you guide young minds through the ethical
+                maze of AI? This project blends behavioral insight, UX strategy
+                , and multi-audience design to create a platform that informs,
+                 engages, and empowers. A top-graded exam case with real-world
+                  relevance.',
+                technologies: 'HTML5, CSS3, JavaScript, Figma, Photoshop, AI',
+                image: 'images/projects/aikon.jpg',
                 code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
-                link: '#portfolio',
+                link: 'https://www.aikon.nu',
             ),
             new ProjectDto(
                 title: 'Digital Guestbook',
