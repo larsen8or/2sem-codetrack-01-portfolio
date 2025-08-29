@@ -51,7 +51,7 @@ $this->extend('layout');
             </div>
 
             <div class="about-image">
-                <img src="images/copilotBillede.png" alt="Headshot of Thomas
+                <img src="<?= __DIR__ . '/../../public/images/copilotBillede.png' ?>" alt="Headshot of Thomas
                 Larsen" class="portrait-image">
             </div>
         </div>
