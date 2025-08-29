@@ -16,7 +16,9 @@ $this->extend('layout');
             Get in Touch
         </h1>
         <p class="page-intro">
-            Have a question or want to collaborate? I'd love to hear from you. Feel free to reach out using the form below or through my social media channels.
+            Have a question or want to collaborate? I'd love to hear from you.
+            Feel free to reach out using the form below or through my SoMe
+            channels.
         </p>
     </div>
 </section>
@@ -29,15 +31,17 @@ $this->extend('layout');
                     Contact Information
                 </h2>
                 <p>
-                    I'd love to hear from you! Whether you have a question about my work, want to discuss a potential project, or just want to say hello, please don't hesitate to reach out.</p>
+                    I'd love to hear from you! Whether you have a question about
+                    my work, want to discuss a potential project, or just want
+                    to say hello, please don't hesitate to reach out.</p>
 
                 <ul class="contact-details">
                     <li>
                         <strong>
                             Email:
                         </strong>
-                        <a href="mailto:contact@example.com">
-                            contact@example.com
+                        <a href="mailto:larsenator@live.com">
+                            larsenator@live.com
                         </a>
                     </li>
                     <li>
@@ -45,21 +49,22 @@ $this->extend('layout');
                             Phone:
                         </strong>
                         <a href="tel:+4512345678">
-                            +45 12345678</a>
+                            +45 31488197</a>
                     </li>
                     <li>
                         <strong>
                             Location:
                         </strong>
                         <span>
-                            City, Country
+                            Kirke Hyllinge, Denmark
                         </span>
                     </li>
                 </ul>
 
                 <blockquote>
-                    "Good design is as little design as possible." — Dieter Rams
-                    <cite>Design Philosophy</cite>
+                    “Digital design isn’t just about pixels anymore – it’s about
+                    business, people, feelings and solving 🅡🅔🅐🅛 problems.”
+
                 </blockquote>
             </div>
 

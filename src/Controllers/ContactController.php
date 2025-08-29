@@ -10,6 +10,7 @@ use App\Http\Request;
 use App\Http\Response;
 use App\Repositories\MessageRepository;
 use App\Security\RateLimiter;
+use App\Services\MailService;
 
 /**
  * Handles the contact form display and form submission.
@@ -76,16 +77,25 @@ class ContactController extends Controller
             return $response;
         }
 
-        // Save the contact form data
-        $repository = new MessageRepository();
-        $repository->create(
-            name: $contactForm->name,
-            email: $contactForm->email,
-            subject: $contactForm->subject,
-            message: $contactForm->message
-        );
+        try {
+            // Save the contact form data
+            $repository = new MessageRepository();
+            $repository->create(
+                name: $contactForm->name,
+                email: $contactForm->email,
+                subject: $contactForm->subject,
+                message: $contactForm->message
+            );
 
-        $this->flashSuccess($response, $contactForm->name);
+            // Send email notification
+            $this->sendNotificationEmail($contactForm);
+
+            $this->flashSuccess($response, $contactForm->name);
+        } catch (\Exception $e) {
+            // Log the error (you might want to implement proper logging)
+            error_log('Error processing contact form: ' . $e->getMessage());
+            $response->setFlash('error', 'There was an error processing your request. Please try again later.');
+        }
         $response->redirect('/contact');
         return $response;
     }
@@ -109,5 +119,25 @@ class ContactController extends Controller
 
         $this->limiter->hit('contact');
         return false;
+    }
+    
+    /**
+     * Send email notification about the new contact form submission.
+     */
+    private function sendNotificationEmail(ContactFormDto $contactForm): void
+    {
+        $mailer = new MailService();
+        
+        $subject = "New Contact Form Submission: {$contactForm->subject}";
+        $message = "You have received a new message from your website contact form.\n\n"
+            . "Name: {$contactForm->name}\n"
+            . "Email: {$contactForm->email}\n"
+            . "Subject: {$contactForm->subject}\n"
+            . "Message:\n{$contactForm->message}";
+            
+        $mailer->setSubject($subject)
+               ->setMessage($message)
+               ->setFrom($contactForm->email, $contactForm->name)
+               ->send();
     }
 }

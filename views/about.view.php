@@ -14,7 +14,14 @@ $this->extend('layout');
             About Me
         </h1>
         <p class="page-intro">
-            Get to know more about my journey, skills, and passion for web development. I'm dedicated to creating elegant solutions to complex problems.
+            My dream is to join a bold team where direct communication,
+            creativity as a responsibility, branding insight and digital
+            solutions come together. I thrive in teams which appreciate attitude
+            , flexibility, team spirit and individuality – where ideas are
+            allowed to grow and perform.
+            I plan to pursue a top-up bachelor’s degree following my Multimedia
+            Design education.
+
         </p>
     </div>
 </section>
@@ -25,10 +32,14 @@ $this->extend('layout');
             <div class="about-text">
                 <h2 class="section-heading">Bio</h2>
                 <p>
-                    Hi, I'm a passionate web developer with a focus on building clean,
-                    efficient, and user-friendly applications. I specialize in PHP
-                    development and modern web technologies, with a particular interest
-                    in creating robust back-end solutions.
+                    Lifelong creator and customizer – with a strong creative
+                    approach to both digital and physical solutions. Over 20
+                    years of experience in Content Creation, SEO, and SoMe
+                    marketing. A modern and sharp communicator with a creative
+                    mindset, intellectual curiosity, and extensive experience in
+                    teaching and knowledge-sharing – supported by more than 25
+                    years of professional background in both the private and
+                    public sectors in Denmark and the UK.
                 </p>
                 <p>
                     My journey in web development began with a fascination for problem-solving
@@ -36,13 +47,12 @@ $this->extend('layout');
                     I believe in writing code that not only works but is also easy to understand
                     and maintain.
                 </p>
-                <p>
-                    Martin is a bloody wanker!
-                </p>
+
             </div>
 
             <div class="about-image">
-                <img src="images/copilotBillede.png" alt="Headshot of Abigail looking suspicious" class="portrait-image">
+                <img src="images/copilotBillede.png" alt="Headshot of Thomas
+                Larsen" class="portrait-image">
             </div>
         </div>
     </div>
@@ -52,14 +62,15 @@ $this->extend('layout');
     <div class="container">
         <h2 class="section-heading">Skills</h2>
         <div class="skill-items">
-            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">HTML5</span>
             <span class="skill-tag">CSS</span>
-            <span class="skill-tag">Photoshop</span>
-            <span class="skill-tag">Illustrator</span>
-            <span class="skill-tag">InDesign</span>
-            <span class="skill-tag">Webhosting</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Adobe Creative Suite</span>
+            <span class="skill-tag">Content Creation</span>
+            <span class="skill-tag">SEO</span>
+            <span class="skill-tag">SoMe Marketing</span>
             <span class="skill-tag">Graphic Design</span>
-            <span class="skill-tag">Project Planning</span>
         </div>
     </div>
 </section>

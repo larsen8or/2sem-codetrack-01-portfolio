@@ -56,25 +56,32 @@ class ProjectController extends Controller
                  engages, and empowers. A top-graded exam case with real-world
                   relevance.',
                 technologies: 'HTML5, CSS3, JavaScript, Figma, Photoshop, AI',
-                image: 'images/projects/aikon.jpg',
+                image: 'images/aikon.jpg',
                 code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
                 link: 'https://www.aikon.nu',
             ),
             new ProjectDto(
-                title: 'Digital Guestbook',
-                description: 'An interactive guestbook application that allows visitors to leave messages and engage with the community. Features user-friendly forms with validation, spam protection, and a clean interface. Messages are stored securely and displayed in a paginated format.',
-                technologies: 'PHP, MySQL, CSS Grid/Flexbox, Form Validation',
-                image: 'images/projects/guestbook.jpg',
+                title: 'Search Engine Optimization (SEO)',
+                description: 'Search Engine Optimization (SEO) for a fitness
+                center running on WordPress. Implemented keyword research,
+                on-page SEO, and technical SEO improvements. Resulted in a 40%
+                increase in organic traffic and improved search rankings within
+                three months.',
+                technologies: 'Content Creation, SEO Tools, WordPress',
+                image: 'images/SEO.gif',
                 code: 'https://github.com/madh-zealand/tba',
-                link: '#guestbook',
+                link: 'https://www.anytimegym.dk',
             ),
             new ProjectDto(
-                title: 'Browser Game',
-                description: 'A fun and engaging browser-based game built with vanilla JavaScript. Implements game mechanics using the requestAnimationFrame API, features smooth animations, collision detection, and a scoring system. Demonstrates strong understanding of DOM manipulation and event handling.',
-                technologies: 'JavaScript, HTML Canvas, CSS Animations',
-                image: 'images/projects/webgame.jpg',
+                title: 'Content Creation',
+                description: 'Interview of ONE Championship Muay Thai fighter
+                Jackie Buntan.
+                 Published on Beyond Kick - the leading kickboxing and Muay Thai
+                  news website.',
+                technologies: 'Imagination and words',
+                image: 'images/Buntan.gif',
                 code: 'https://github.com/madh-zealand/tba',
-                link: '#webgame',
+                link: 'https://beyondkick.com/interview/exclusive-interview-jackie-buntan-ahead-of-one-on-prime-video-5/',
             )
         ];
     }

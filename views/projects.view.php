@@ -25,7 +25,7 @@ $this->extend('layout');
                 <div
                     class="project-row <?= $index % 2 === 1 ? 'project-row--reverse' : '' ?>"
                 >
-                    <div class="project-image">
+                    <div class="project-image" <?= str_contains($project->title, 'SEO') ? 'data-project="seo"' : '' ?>>
                         <img
                             src="<?= htmlspecialchars($project->image) ?>"
                             alt="<?= htmlspecialchars($project->title) ?>"

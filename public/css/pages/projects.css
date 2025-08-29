@@ -36,6 +36,19 @@
 
         @media (min-width: 768px) {
             min-height: 300px;
+            flex: 1;
+        }
+        
+        /* Specific style for SEO project */
+        &[data-project="seo"] {
+            @media (min-width: 768px) {
+                flex: 0 0 600px;
+                min-height: 400px;
+                
+                & img {
+                    object-fit: contain;
+                }
+            }
         }
 
         & img {
@@ -113,4 +126,16 @@
 
 .project-actions {
     margin-top: auto;
+}
+
+/* Project buttons specific styles */
+.project-actions .btn-view-project {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    transition: var(--transition);
+}
+
+.project-actions .btn-view-project:hover {
+    background-color: #f5eee2;
+    color: var(--color-text);
 }

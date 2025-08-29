@@ -22,8 +22,11 @@
             <div class="header-content">
                 <nav class="main-nav">
                     <ul>
-                        <a href="/">
-                            <img src="/images/old-guy-logo.png" alt="Logo" width="80" height="80" style="max-width:100%;height:auto;">
+                        <a href="/" class="logo-link">
+                            <img src="/images/old-guy-logo.png" alt="Logo"
+                                 width="80" height="80"
+                                 style="max-width:100%;height:auto;"
+                                 onerror="this.src='/images/old-guy-logo.png';">
                         </a>
                         <li>
                             <a href="/">
