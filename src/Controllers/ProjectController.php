@@ -57,7 +57,8 @@ class ProjectController extends Controller
                   relevance.',
                 technologies: 'HTML5, CSS3, JavaScript, Figma, Photoshop, AI',
                 image: 'images/aikon.jpg',
-                code: 'https://github.com/madh-zealand/2sem-codetrack-01-portfolio',
+                code: 'https://github.com/madh-zealand/2sem-codetrack-01-
+                portfolio',
                 link: 'https://www.aikon.nu',
             ),
             new ProjectDto(
@@ -81,7 +82,42 @@ class ProjectController extends Controller
                 technologies: 'Imagination and words',
                 image: 'images/Buntan.gif',
                 code: 'https://github.com/madh-zealand/tba',
-                link: 'https://beyondkick.com/interview/exclusive-interview-jackie-buntan-ahead-of-one-on-prime-video-5/',
+                link: 'https://beyondkick.com/interview/exclusive-interview-
+                jackie-buntan-ahead-of-one-on-prime-video-5/'
+            ),
+            new ProjectDto(
+                title: 'Advanced PHP Guestbook',
+                description: 'This project involved enhancing a digital guestbook
+                 with a custom front-end and new back-end features.
+                I began by personalizing the user interface with a custom design
+                 and color scheme. I then extended its functionality by adding a
+                  new input field to the form, which included implementing
+                  server-side validation, updating the database schema, and
+                   using cookies to remember user data. Finally, to make messages
+                    more expressive, I developed a **PHP function** that
+                    dynamically converts text-based smileys into emojis when
+                    displayed, ensuring the original data in the database remains
+                     unaltered.',
+                technologies: 'Backend: PHP - Database: SQL Front-end HTML5 &
+                CSS3 - Client Side: Cookies',
+                image: 'images/Guestbook.jpg',
+                code: 'https://github.com/larsen8or/Guestbook.git',
+                link: 'https://guestbook.nator.dk/',
+            )
+            new ProjectDto(
+                title: 'Style Swithcer',
+                description: 'Designed and implemented a new theme with color
+                variables and button styling.
+                Added the theme to theme list in JavaScript
+                Developed the HTML-element Alert Box, whicch adapts the new
+                theme when site theme is changed.
+                eveloped and added a counter functionality, which Counts the
+                amount of times the site theme has been changed. Used js/style-
+                switcher.js',
+                technologies: 'Design, HTML5, CSS3, JavaScript',
+                image: 'images/Guestbook.jpg',
+                code: 'https://github.com/larsen8or/Guestbook.git',
+                link: 'https://guestbook.nator.dk/',
             )
         ];
     }
