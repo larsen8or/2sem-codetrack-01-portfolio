@@ -124,7 +124,7 @@ class ProjectController extends Controller
                 side: Not required (purely client-rendered application)',
                 image: 'images/videoStyleSwitcher.mp4',
                 code: 'https://github.com/larsen8or/Guestbook.git',
-                link: 'https://guestbook.nator.dk/',
+                link: 'https://style-switcher.nator.dk',
             )
         ];
     }
