@@ -94,28 +94,35 @@ class ProjectController extends Controller
                   new input field to the form, which included implementing
                   server-side validation, updating the database schema, and
                    using cookies to remember user data. Finally, to make messages
-                    more expressive, I developed a **PHP function** that
+                    more expressive, I developed a PHP function which
                     dynamically converts text-based smileys into emojis when
                     displayed, ensuring the original data in the database remains
                      unaltered.',
-                technologies: 'Backend: PHP - Database: SQL Front-end HTML5 &
+                technologies: 'Backend: PHP - Database: SQL - Front-end HTML5 &
                 CSS3 - Client Side: Cookies',
                 image: 'images/Guestbook.jpg',
                 code: 'https://github.com/larsen8or/Guestbook.git',
                 link: 'https://guestbook.nator.dk/',
-            )
+            ),
             new ProjectDto(
                 title: 'Style Swithcer',
-                description: 'Designed and implemented a new theme with color
-                variables and button styling.
-                Added the theme to theme list in JavaScript
-                Developed the HTML-element Alert Box, whicch adapts the new
-                theme when site theme is changed.
-                eveloped and added a counter functionality, which Counts the
-                amount of times the site theme has been changed. Used js/style-
-                switcher.js',
-                technologies: 'Design, HTML5, CSS3, JavaScript',
-                image: 'images/Guestbook.jpg',
+                description: 'A custom theme extension was developed to enhance
+                the flexibility and visual identity of the application. A new
+                "Cyber" theme was designed, implementing unique color variables
+                and button styles that integrate seamlessly with the existing
+                theme system. To showcase dynamic adaptability, a styled alert
+                box component was built, which automatically inherits and applies
+                the active theme’s design properties, ensuring consistency across
+                the interface. Additionally, functionality was added to track
+                and log theme-switching activity in real time, providing valuable
+                insight into user interactions. The result is a modular, scalable
+                solution that strengthens brand expression while maintaining
+                clean code architecture and usability.',
+                technologies: 'Front-end: HTML5 for structure, CSS3 with custom
+                properties for theme styling - Client-side: JavaScript (ES6) for
+                dynamic theme switching, state management, and logging - Server-
+                side: Not required (purely client-rendered application)',
+                image: 'images/product-animation.gif',
                 code: 'https://github.com/larsen8or/Guestbook.git',
                 link: 'https://guestbook.nator.dk/',
             )
