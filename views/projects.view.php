@@ -26,10 +26,17 @@ $this->extend('layout');
                     class="project-row <?= $index % 2 === 1 ? 'project-row--reverse' : '' ?>"
                 >
                     <div class="project-image" <?= str_contains($project->title, 'SEO') ? 'data-project="seo"' : '' ?>>
-                        <img
-                            src="<?= htmlspecialchars($project->image) ?>"
-                            alt="<?= htmlspecialchars($project->title) ?>"
-                        >
+                        <?php if (str_ends_with(strtolower($project->image), '.mp4')): ?>
+                            <video autoplay loop muted playsinline>
+                                <source src="<?= htmlspecialchars($project->image) ?>" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        <?php else: ?>
+                            <img
+                                src="<?= htmlspecialchars($project->image) ?>"
+                                alt="<?= htmlspecialchars($project->title) ?>"
+                            >
+                        <?php endif; ?>
                     </div>
                     <div class="project-content">
                         <h2>
