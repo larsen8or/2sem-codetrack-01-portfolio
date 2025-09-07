@@ -122,7 +122,7 @@ class ProjectController extends Controller
                 properties for theme styling - Client-side: JavaScript (ES6) for
                 dynamic theme switching, state management, and logging - Server-
                 side: Not required (purely client-rendered application)',
-                image: 'images/product-animation.gif',
+                image: 'images/Video.mp4',
                 code: 'https://github.com/larsen8or/Guestbook.git',
                 link: 'https://guestbook.nator.dk/',
             )
